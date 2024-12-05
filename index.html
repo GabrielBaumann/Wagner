@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/perfect-scrollbar/css/perfect-scrollbar.css">
+    <script src="https://cdn.jsdelivr.net/npm/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+
+    <title>Wagner Alves</title>
+</head>
+<body>
+    <div id="scroll-container">
+        <!-- Conteúdo da página -->
+    </div>
+    
+    <script>
+        var container = document.getElementById('scroll-container');
+        var ps = new PerfectScrollbar(container);
+    </script>
+    
+    <div class="imagemFundo"></div>
+    <nav id="desktop-nav">
+        <div class="logo">Wagner Alves</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#experience">Repertório</a></li>
+                <li><a href="#projects">Eventos</a></li>
+                <li><a href="#projects">Depoimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Wagner Alves</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Habilidades</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Depoimentos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/3037785755-cristiano-araujo-violao.jpg" class="profile-img">
+        </div>
+        <div class="section__text">
+            <h1 class="title">Wagner Alves</h1>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Instagram</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contato</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/icons8-whatsapp-30.png" 
+                alt="My whatsapp Profile"
+                class="icon" onclick="location.href='https://wa.link/nq7hi3'">
+                <img src="./assets/icons8-spotify-30.png" 
+                alt="My Spotify Profile"
+                class="icon" onclick="location.href='https://linkedin.com/'">
+                <img src="./assets/icons8-facebook-30.png" 
+                alt="My Facebook Profile"
+                class="icon" onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+        <div id="arrow-container">
+            <p class="scroll-text">Conheça meu trabalho</p>
+            <svg class="scroll-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#1DB954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"></path>
+            </svg>
+        </div>        
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Saiba um pouco mais</p>
+        <h1 class="title">Sobre mim</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/images.jpeg" 
+                    alt="Profile Picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Experiência em</h3>
+                        <p>Desenvolvimento de sistemas de Banco de dados em Access</p><br>
+                        <p>Análise  e tratamento de Dados com Power BI</p><br>
+                        <p>Desenvolvimento Web Full-stack</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Education icon"
+                            class="icon"
+                        />
+                        <h3>Formações</h3>
+                        <p>(Uniube) - Cursando Análise e<br>Desenvolvimento de Sistemas</p><br>
+                        <p>(Udemy) - Complete Web Development Bootcamp</p><br>
+                        <p>(Etvp) - Técnico em Eletrotécnica</p>
+                    </div>
+                </div>
+                <div class="text_container">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, rerum fugit error adipisci nobis libero quasi, quaerat exercitationem sapiente saepe ad ipsa distinctio. Similique itaque optio accusantium? Quod, nostrum. Iure maiores totam sit molestiae doloribus nulla tenetur iste? Autem, tempora aperiam tenetur corporis non unde laboriosam ipsum rem inventore reprehenderit!</p>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+            />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Conheça as minhas</p>
+        <h1 class="title">Habilidades</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Desenvolvimento Web</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experiente</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experiente</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Iniciante</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Banco de Dados</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Microsoft Access</h3>
+                                <p>Experiente</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>VBA</h3>
+                                <p>Experiente</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experiente</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Power BI</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+            />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Veja os meus</p>
+        <h1 class="title">Trabalhos Recentes</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/gestao.PNG" 
+                            alt="Projeto Gestao de Beneficio"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Gestão de Benefícios</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                            Saiba mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Gostou do que viu?</p>
+        <h1 class="title">Me Contate</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/whatsapp.png" 
+                    alt="whatsapp icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="mailto:gabrielgoncalves238@gmail.com">Whatsapp</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email.png" 
+                    alt="Email icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="mailto:gabrielgoncalves238@gmail.com">gabrielgoncalves238@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="linkedin icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="https://linkedin.com/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#experience">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Gabriel Baumann. Todos Os Direitos Reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
